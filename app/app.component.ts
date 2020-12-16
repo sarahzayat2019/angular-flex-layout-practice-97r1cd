@@ -7,7 +7,17 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   name = "Angular 5";
-  flexLayout1 = '<div fxLayout="row" fxLayout.xs="column"></div>';
+  flexLayout1 =
+    '<div class="container">' +
+    '\n	<div class="content" fxLayout="row">' +
+    '\n	\n<div fxFlex="50" fxFlex.lt-md="100" class="flex-item">' +
+    '\n	<div class="item">50% division</div>' +
+    "\n	</div>" +
+    '\n	\n<div fxFlex="50" fxFlex.lt-md="100" class="flex-item">' +
+    '\n		<div class="item">50% division</div>' +
+    "\n		</div>" +
+    "\n\n	</div>" +
+    "\n	</div>";
   fxFlex1 =
     '<div class="container">' +
     '\n	<div class="content" fxLayout="row" fxFlexFill>' +
