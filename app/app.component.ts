@@ -83,8 +83,8 @@ export class AppComponent {
   fxFlexOffset1 =
     '<div class="container-box">' +
     '\n<div class="content" fxLayout="row wrap" fxFlexFill>' +
-    '\n	\n	<div fxFlex="50" class="flex-item" fxFlexOffset="50">' +
-    '\n	<div class="item">50% offset</div>' +
+    '\n	\n	<div fxFlex="50" class="flex-item" fxFlexOffset="20">' +
+    '\n	<div class="item">20% offset</div>' +
     "\n	</div>" +
     "\n	\n</div>" +
     "\n	</div>";

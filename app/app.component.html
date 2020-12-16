@@ -1,449 +1,465 @@
-<section class="fxLayout-details">
+<header>
 	<div class="container">
-		<div class="content" fxLayout="row wrap" fxFlexFill>
-			<div fxFlex="100" class="flex-item">
-				<h2>fxLayout</h2>
-				<p>
-					Defines the flow order of child items within a flexbox container
-				</p>
-				<div class="code-snippet">
-					<code [innerText]="flexLayout1"></code>
-				</div>
+		<div class="content" fxLayout="row" fxFlexFill fxLayoutAlign="center center">
+			<div fxFlex="80" fxFlex.lt-md="100" class="flex-item">
+				<h1>Let's know more about FlexLayout</h1>
+			</div>
+			<div fxFlex="20" fxFlex.lt-md="100" class="flex-item">
+				<p>Sarah Zayat /
+					<a href="https://polarstork.com" target="_blank">PolarStork</a>
+					/ <a href="https://github.com/sarahzayat2019/angular-flex-layout-practice-97r1cd"
+						target="_blank">GitHub</a></p>
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="content" fxLayout="row" fxFlexFill>
-			<div fxFlex="50" fxFlex.lt-md="100" class="flex-item">
-				<div class="item">50% division</div>
-			</div>
-			<div fxFlex="50" fxFlex.lt-md="100" class="flex-item">
-				<div class="item">50% division</div>
-			</div>
-		</div>
-	</div>
-</section>
-<hr />
-
-<section class="fxFlex-details">
-	<div class="container">
-		<div class="content" fxLayout="row wrap" fxFlexFill>
-			<div fxFlex="100" class="flex-item">
-				<h2>fxFlex</h2>
-				<p>
-					The fxFlex directive should be used on elements within a fxLayout
-					container and identifies the resizing of that element within the
-					flexbox container flow.
-				</p>
-				<div class="code-snippet">
-					<code [innerText]="fxFlex1"></code>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="content" fxLayout="row" fxFlexFill>
-			<div fxFlex="20" class="flex-item">
-				<div class="item">20% division</div>
-			</div>
-			<div fxFlex="20" class="flex-item">
-				<div class="item">20% division</div>
-			</div>
-			<div fxFlex="20" class="flex-item">
-				<div class="item">20% division</div>
-			</div>
-			<div fxFlex="20" class="flex-item">
-				<div class="item">20% division</div>
-			</div>
-			<div fxFlex="20" class="flex-item">
-				<div class="item">20% division</div>
-			</div>
-		</div>
-	</div>
-</section>
-<hr />
-<section class="fxLayoutAlign-details">
-	<div class="container">
-		<div class="content" fxLayout="column">
-			<div fxFlex="100" class="flex-item">
-				<h2>fxLayoutAlign</h2>
-				<p>
-					Defines how flexbox items are aligned according to both the main-axis
-					and the cross-axis, within a flexbox container
-				</p>
-				<div class="code-snippet">
-					<code [innerText]="flexLayoutAlign1"></code>
-					<span> <br />// start: main-axis , stretch: cross-axis</span>
-				</div>
-			</div>
-		</div>
-		<div class="content" fxLayout="row" fxFlexFill>
-			<div fxFlex="50" class="flex-item">
-				Main-axis Options:
-				<p>Default: justify-content: flex-start</p>
-				<ul>
-					<li>
-						start
-					</li>
-					<li>
-						center
-					</li>
-					<li>
-						end
-					</li>
-					<li>
-						space-around
-					</li>
-					<li>
-						space-between
-					</li>
-					<li>
-						space-evenly
-					</li>
-				</ul>
-			</div>
-			<div fxFlex="50" class="flex-item">
-				Cross-axis Options:
-				<p>Default: align-items: stretch; align-content: stretch</p>
-				<ul>
-					<li>
-						start
-					</li>
-					<li>
-						center
-					</li>
-					<li>
-						end
-					</li>
-					<li>
-						space-around
-					</li>
-					<li>
-						space-between
-					</li>
-					<li>
-						stretch
-					</li>
-					<li>
-						baseline
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="content" fxLayout="row">
-			<div fxFlex="100" class="flex-item">
-				<div class="code-snippet">
-					<code [innerText]="flexLayoutAlign2"></code>
-				</div>
-			</div>
-		</div>
-		<div class="container-box">
-			<div class="content" fxLayout="row" fxLayoutAlign="center center" fxFlexFill>
-				<div fxFlex="20" class="flex-item">
-					<div class="item">1. One</div>
-				</div>
-				<div fxFlex="20" class="flex-item">
-					<div class="item">1. Two</div>
-				</div>
-				<div fxFlex="20" class="flex-item">
-					<div class="item">1. Three</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<hr />
-<section class="fxFlexAlign-details">
-	<div class="container">
-		<div class="content" fxLayout="column">
-			<div fxFlex="100" class="flex-item">
-				<h2>fxFlexAlign</h2>
-				<p>
-					The fxFlexAlign directive should be used on on elements within a
-					sorted fxLayout container and dictates how the element should be
-					aligned, overriding the container cross-axis alignment setting
-				</p>
-				<div class="code-snippet">
-					<code [innerText]="fxFlexAlign1"></code>
-				</div>
-			</div>
-		</div>
-		<div class="content" fxLayout="row" fxFlexFill>
-			<div fxFlex="50" class="flex-item">
-				Values for fxFlexAlign
-				<ul>
-					<li>
-						start
-					</li>
-					<li>
-						center
-					</li>
-					<li>
-						end
-					</li>
-					<li>
-						baseline
-					</li>
-					<li>
-						stretch
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="container-box">
+</header>
+<main>
+	<section class="fxLayout-details">
+		<div class="container">
 			<div class="content" fxLayout="row" fxFlexFill>
-				<div fxFlex="20" class="flex-item" fxFlexAlign="center">
-					<div class="item">1. One</div>
-				</div>
-				<div fxFlex="20" class="flex-item" fxFlexAlign="start">
-					<div class="item">1. Two</div>
-				</div>
-				<div fxFlex="20" class="flex-item" fxFlexAlign="end">
-					<div class="item">1. Three</div>
+				<div fxFlex="100" class="flex-item">
+					<h2>fxLayout</h2>
+					<p>
+						Defines the flow order of child items within a flexbox container
+					</p>
+					<div class="code-snippet">
+						<code [innerText]="flexLayout1"></code>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<hr />
+		<div class="container">
+			<div class="content" fxLayout="row" fxFlexFill>
+				<div fxFlex="50" fxFlex.lt-md="100" class="flex-item">
+					<div class="item">50% division</div>
+				</div>
+				<div fxFlex="50" fxFlex.lt-md="100" class="flex-item">
+					<div class="item">50% division</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr />
 
-<section class="fxFlexOrder-details">
-	<div class="container">
-		<div class="content" fxLayout="row" fxFlexFill>
-			<div fxFlex="100" class="flex-item">
-				<h2>fxFlexOrder</h2>
-				<p>
-					The fxFlexOrder directive should be used on elements within a sorted
-					fxLayout container and identifies the positional ordering of the
-					element
-				</p>
-				<div class="code-snippet">
-					<code [innerText]="fxFlexOrder1"></code>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="container-box">
+	<section class="fxFlex-details">
+		<div class="container">
 			<div class="content" fxLayout="row wrap" fxFlexFill>
-				<div fxFlex="20" class="flex-item" fxFlexOrder="4">
-					<div class="item">1. One</div>
-				</div>
-				<div fxFlex="20" class="flex-item" fxFlexOrder="2">
-					<div class="item">2. Two</div>
-				</div>
-				<div fxFlex="20" class="flex-item" fxFlexOrder="3">
-					<div class="item">3. Three</div>
-				</div>
-				<div fxFlex="20" class="flex-item" fxFlexOrder="1">
-					<div class="item">4. Four</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<hr />
-<section class="fxFlexOffset-details">
-	<div class="container">
-		<div class="content" fxLayout="row" fxFlexFill>
-			<div fxFlex="100" class="flex-item">
-				<h2>fxFlexOffset</h2>
-				<p>
-					The fxFlexOffset directive should be used on on elements within a
-					fxLayout container and dictates the margin between elements
-				</p>
-				<div class="code-snippet">
-					<code [innerText]="fxFlexOffset1"></code>
+				<div fxFlex="100" class="flex-item">
+					<h2>fxFlex</h2>
+					<p>
+						The fxFlex directive should be used on elements within a fxLayout
+						container and identifies the resizing of that element within the
+						flexbox container flow.
+					</p>
+					<div class="code-snippet">
+						<code [innerText]="fxFlex1"></code>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container">
-		<div class="container-box">
-			<div class="content" fxLayout="row wrap" fxFlexFill>
-				<div fxFlex="50" class="flex-item" fxFlexOffset="20">
-					<div class="item">50% offset</div>
+		<div class="container">
+			<div class="content" fxLayout="row" fxFlexFill>
+				<div fxFlex="20" class="flex-item">
+					<div class="item">20% division</div>
+				</div>
+				<div fxFlex="20" class="flex-item">
+					<div class="item">20% division</div>
+				</div>
+				<div fxFlex="20" class="flex-item">
+					<div class="item">20% division</div>
+				</div>
+				<div fxFlex="20" class="flex-item">
+					<div class="item">20% division</div>
+				</div>
+				<div fxFlex="20" class="flex-item">
+					<div class="item">20% division</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<hr />
-<section class="fxFlexFill-details">
-	<div class="container">
-		<div class="content" fxLayout="row" fxFlexFill>
-			<div fxFlex="100" class="flex-item">
-				<h2>fxFlexFill</h2>
-				<p>
-					The fxFlexFill directive should be used on elements within a fxLayout
-					container and identifies the element whose width and height should be
-					maximized
-				</p>
-				<div class="code-snippet">
-					<code [innerText]="fxFlexFill1"></code>
+	</section>
+	<hr />
+	<section class="fxLayoutAlign-details">
+		<div class="container">
+			<div class="content" fxLayout="column">
+				<div fxFlex="100" class="flex-item">
+					<h2>fxLayoutAlign</h2>
+					<p>
+						Defines how flexbox items are aligned according to both the main-axis
+						and the cross-axis, within a flexbox container
+					</p>
+					<div class="code-snippet">
+						<code [innerText]="flexLayoutAlign1"></code>
+						<span> <br />// start: main-axis , stretch: cross-axis</span>
+					</div>
+				</div>
+			</div>
+			<div class="content" fxLayout="row" fxFlexFill>
+				<div fxFlex="50" class="flex-item">
+					Main-axis Options:
+					<p>Default: justify-content: flex-start</p>
+					<ul>
+						<li>
+							start
+						</li>
+						<li>
+							center
+						</li>
+						<li>
+							end
+						</li>
+						<li>
+							space-around
+						</li>
+						<li>
+							space-between
+						</li>
+						<li>
+							space-evenly
+						</li>
+					</ul>
+				</div>
+				<div fxFlex="50" class="flex-item">
+					Cross-axis Options:
+					<p>Default: align-items: stretch; align-content: stretch</p>
+					<ul>
+						<li>
+							start
+						</li>
+						<li>
+							center
+						</li>
+						<li>
+							end
+						</li>
+						<li>
+							space-around
+						</li>
+						<li>
+							space-between
+						</li>
+						<li>
+							stretch
+						</li>
+						<li>
+							baseline
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content" fxLayout="row">
+				<div fxFlex="100" class="flex-item">
+					<div class="code-snippet">
+						<code [innerText]="flexLayoutAlign2"></code>
+					</div>
+				</div>
+			</div>
+			<div class="container-box">
+				<div class="content" fxLayout="row" fxLayoutAlign="center center" fxFlexFill>
+					<div fxFlex="20" class="flex-item">
+						<div class="item">1. One</div>
+					</div>
+					<div fxFlex="20" class="flex-item">
+						<div class="item">1. Two</div>
+					</div>
+					<div fxFlex="20" class="flex-item">
+						<div class="item">1. Three</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+	<hr />
+	<section class="fxFlexAlign-details">
+		<div class="container">
+			<div class="content" fxLayout="column">
+				<div fxFlex="100" class="flex-item">
+					<h2>fxFlexAlign</h2>
+					<p>
+						The fxFlexAlign directive should be used on on elements within a
+						sorted fxLayout container and dictates how the element should be
+						aligned, overriding the container cross-axis alignment setting
+					</p>
+					<div class="code-snippet">
+						<code [innerText]="fxFlexAlign1"></code>
+					</div>
+				</div>
+			</div>
+			<div class="content" fxLayout="row" fxFlexFill>
+				<div fxFlex="50" class="flex-item">
+					Values for fxFlexAlign
+					<ul>
+						<li>
+							start
+						</li>
+						<li>
+							center
+						</li>
+						<li>
+							end
+						</li>
+						<li>
+							baseline
+						</li>
+						<li>
+							stretch
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container-box">
+				<div class="content" fxLayout="row" fxFlexFill>
+					<div fxFlex="20" class="flex-item" fxFlexAlign="center">
+						<div class="item">1. One</div>
+					</div>
+					<div fxFlex="20" class="flex-item" fxFlexAlign="start">
+						<div class="item">1. Two</div>
+					</div>
+					<div fxFlex="20" class="flex-item" fxFlexAlign="end">
+						<div class="item">1. Three</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr />
 
-<section class="responsive-features-details">
-	<div class="container">
-		<div class="content" fxLayout="row" fxFlexFill>
-			<div fxFlex="100" class="flex-item">
-				<h2>Responsive Features</h2>
-				<p>
-					The following APIs also add or remove DOM element inline styles, they
-					are NOT FlexBox CSS specific.
-					<br />
+	<section class="fxFlexOrder-details">
+		<div class="container">
+			<div class="content" fxLayout="row" fxFlexFill>
+				<div fxFlex="100" class="flex-item">
+					<h2>fxFlexOrder</h2>
+					<p>
+						The fxFlexOrder directive should be used on elements within a sorted
+						fxLayout container and identifies the positional ordering of the
+						element
+					</p>
+					<div class="code-snippet">
+						<code [innerText]="fxFlexOrder1"></code>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="container-box">
+				<div class="content" fxLayout="row wrap" fxFlexFill>
+					<div fxFlex="20" class="flex-item" fxFlexOrder="4">
+						<div class="item">1. One</div>
+					</div>
+					<div fxFlex="20" class="flex-item" fxFlexOrder="2">
+						<div class="item">2. Two</div>
+					</div>
+					<div fxFlex="20" class="flex-item" fxFlexOrder="3">
+						<div class="item">3. Three</div>
+					</div>
+					<div fxFlex="20" class="flex-item" fxFlexOrder="1">
+						<div class="item">4. Four</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr />
+	<section class="fxFlexOffset-details">
+		<div class="container">
+			<div class="content" fxLayout="row" fxFlexFill>
+				<div fxFlex="100" class="flex-item">
+					<h2>fxFlexOffset</h2>
+					<p>
+						The fxFlexOffset directive should be used on on elements within a
+						fxLayout container and dictates the margin between elements
+					</p>
+					<div class="code-snippet">
+						<code [innerText]="fxFlexOffset1"></code>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="container-box">
+				<div class="content" fxLayout="row wrap" fxFlexFill>
+					<div fxFlex="50" class="flex-item" fxFlexOffset="20">
+						<div class="item">20% offset</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr />
+	<section class="fxFlexFill-details">
+		<div class="container">
+			<div class="content" fxLayout="row" fxFlexFill>
+				<div fxFlex="100" class="flex-item">
+					<h2>fxFlexFill</h2>
+					<p>
+						The fxFlexFill directive should be used on elements within a fxLayout
+						container and identifies the element whose width and height should be
+						maximized
+					</p>
+					<div class="code-snippet">
+						<code [innerText]="fxFlexFill1"></code>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section class="responsive-features-details">
+		<div class="container">
+			<div class="content" fxLayout="row" fxFlexFill>
+				<div fxFlex="100" class="flex-item">
+					<h2>Responsive Features</h2>
+					<p>
+						The following APIs also add or remove DOM element inline styles, they
+						are NOT FlexBox CSS specific.
+						<br />
           Instead these are Responsive APIs used to adjust specific, non-flexbox
           styles when a specific mediaQuery has activated:
         </p>
-					<ul>
-						<li>
-							fxShow: This markup specifies if its host element should be
-							displayed (or not)
-							<div class="code-snippet">
-								<code [innerText]="fxShow1"></code>
-							</div>
-						</li>
-						<li>
-							fxHide: This markup specifies if its host element should NOT be
-							displayed
+						<ul>
+							<li>
+								<strong>	fxShow:</strong> This markup specifies if its host element should be
+								displayed (or not)
+								<div class="code-snippet">
+									<code [innerText]="fxShow1"></code>
+								</div>
+							</li>
+							<li>
+								<strong>	fxHide:</strong> This markup specifies if its host element should NOT be
+								displayed
 
-							<div class="code-snippet">
-								<code [innerText]="fxHide1"></code>
-							</div>
-						</li>
-						<li>
-							ngClass : Enhances the ngClass directives with class changes based
-							on mediaQuery activations
-							<div class="code-snippet">
-								<code [innerText]="ngClass1"></code>
-							</div>
-						</li>
-						<li>
-							ngStyle: Enhances the ngStyle directive with style updates based on
-							mediaQuery activations
-							<div class="code-snippet">
-								<code [innerText]="ngStyle1"></code>
-							</div>
-						</li>
-					</ul>
+								<div class="code-snippet">
+									<code [innerText]="fxHide1"></code>
+								</div>
+							</li>
+							<li>
+								<strong>	ngClass :</strong> Enhances the ngClass directives with class changes based
+								on mediaQuery activations
+								<div class="code-snippet">
+									<code [innerText]="ngClass1"></code>
+								</div>
+							</li>
+							<li>
+								<strong>	ngStyle:</strong> Enhances the ngStyle directive with style updates based on
+								mediaQuery activations
+								<div class="code-snippet">
+									<code [innerText]="ngStyle1"></code>
+								</div>
+							</li>
+						</ul>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-<hr />
-<section>
-	<div class="container">
-		<h2>MediaQueries and Aliases</h2>
+	<hr />
+	<section>
+		<div class="container">
+			<h2>MediaQueries and Aliases</h2>
 
-		<img src="/assets/grid-system.png" />
+			<img src="https://raw.githubusercontent.com/sarahzayat2019/angular-flex-layout-practice-97r1cd/master/app/assets/grid-system.png" />
 
-		<table role="table">
-			<thead>
-				<tr>
-					<th>breakpoint</th>
-					<th>mediaQuery</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>xs</td>
-					<td>'screen and (max-width: 599px)'</td>
-				</tr>
-				<tr>
-					<td>sm</td>
-					<td>'screen and (min-width: 600px) and (max-width: 959px)'</td>
-				</tr>
-				<tr>
-					<td>md</td>
-					<td>'screen and (min-width: 960px) and (max-width: 1279px)'</td>
-				</tr>
-				<tr>
-					<td>lg</td>
-					<td>'screen and (min-width: 1280px) and (max-width: 1919px)'</td>
-				</tr>
-				<tr>
-					<td>xl</td>
-					<td>'screen and (min-width: 1920px) and (max-width: 5000px)'</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>lt-sm</td>
-					<td>'screen and (max-width: 599px)'</td>
-				</tr>
-				<tr>
-					<td>lt-md</td>
-					<td>'screen and (max-width: 959px)'</td>
-				</tr>
-				<tr>
-					<td>lt-lg</td>
-					<td>'screen and (max-width: 1279px)'</td>
-				</tr>
-				<tr>
-					<td>lt-xl</td>
-					<td>'screen and (max-width: 1919px)'</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>gt-xs</td>
-					<td>'screen and (min-width: 600px)'</td>
-				</tr>
-				<tr>
-					<td>gt-sm</td>
-					<td>'screen and (min-width: 960px)'</td>
-				</tr>
-				<tr>
-					<td>gt-md</td>
-					<td>'screen and (min-width: 1280px)'</td>
-				</tr>
-				<tr>
-					<td>gt-lg</td>
-					<td>'screen and (min-width: 1920px)'</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-</section>
-<hr />
-<section class="useful-links">
-	<div class="container">
-		<ul>
-			<li>
-				Package Link:
-				<a href="https://github.com/angular/flex-layout">
-					https://github.com/angular/flex-layout
-				</a>
-			</li>
-			<li>
-				Responsive Api:
-				<a href="https://github.com/angular/flex-layout/wiki/Responsive-API">
-					https://github.com/angular/flex-layout/wiki/Responsive-API
-				</a>
-			</li>
-			<li>
-				Play Around Flex:
-				<a href="https://tburleson-layouts-demos.firebaseapp.com/#/docs">
-					https://tburleson-layouts-demos.firebaseapp.com/#/docs
-				</a>
-			</li>
-			<li>
-				cheat sheet:
-				<a href="https://github.com/angular/flex-layout/wiki/Declarative-API-Overview">
-					https://github.com/angular/flex-layout/wiki/Declarative-API-Overview
-				</a>
-			</li>
-		</ul>
-	</div>
-</section>
-
+			<table role="table">
+				<thead>
+					<tr>
+						<th>breakpoint</th>
+						<th>mediaQuery</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>xs</td>
+						<td>'screen and (max-width: 599px)'</td>
+					</tr>
+					<tr>
+						<td>sm</td>
+						<td>'screen and (min-width: 600px) and (max-width: 959px)'</td>
+					</tr>
+					<tr>
+						<td>md</td>
+						<td>'screen and (min-width: 960px) and (max-width: 1279px)'</td>
+					</tr>
+					<tr>
+						<td>lg</td>
+						<td>'screen and (min-width: 1280px) and (max-width: 1919px)'</td>
+					</tr>
+					<tr>
+						<td>xl</td>
+						<td>'screen and (min-width: 1920px) and (max-width: 5000px)'</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>lt-sm</td>
+						<td>'screen and (max-width: 599px)'</td>
+					</tr>
+					<tr>
+						<td>lt-md</td>
+						<td>'screen and (max-width: 959px)'</td>
+					</tr>
+					<tr>
+						<td>lt-lg</td>
+						<td>'screen and (max-width: 1279px)'</td>
+					</tr>
+					<tr>
+						<td>lt-xl</td>
+						<td>'screen and (max-width: 1919px)'</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>gt-xs</td>
+						<td>'screen and (min-width: 600px)'</td>
+					</tr>
+					<tr>
+						<td>gt-sm</td>
+						<td>'screen and (min-width: 960px)'</td>
+					</tr>
+					<tr>
+						<td>gt-md</td>
+						<td>'screen and (min-width: 1280px)'</td>
+					</tr>
+					<tr>
+						<td>gt-lg</td>
+						<td>'screen and (min-width: 1920px)'</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+	<hr />
+	<section class="useful-links">
+		<div class="container">
+			<ul>
+				<li>
+					Package Link:
+					<a href="https://github.com/angular/flex-layout">
+						https://github.com/angular/flex-layout
+					</a>
+				</li>
+				<li>
+					Responsive Api:
+					<a href="https://github.com/angular/flex-layout/wiki/Responsive-API">
+						https://github.com/angular/flex-layout/wiki/Responsive-API
+					</a>
+				</li>
+				<li>
+					Play Around Flex:
+					<a href="https://tburleson-layouts-demos.firebaseapp.com/#/docs">
+						https://tburleson-layouts-demos.firebaseapp.com/#/docs
+					</a>
+				</li>
+				<li>
+					cheat sheet:
+					<a href="https://github.com/angular/flex-layout/wiki/Declarative-API-Overview">
+						https://github.com/angular/flex-layout/wiki/Declarative-API-Overview
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+</main>
 <footer></footer>

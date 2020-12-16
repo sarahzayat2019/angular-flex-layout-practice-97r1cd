@@ -23,8 +23,6 @@ html {
 .content {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -10px !important;
-  margin-left: -10px !important;
 }
 
 .flex-item {
@@ -42,6 +40,14 @@ html {
 @media screen and (min-width: 769px) {
   .container {
     max-width: 720px;
+  }
+  .content {
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -10px !important;
+      margin-left: -10px !important;
+    }
   }
 }
 
