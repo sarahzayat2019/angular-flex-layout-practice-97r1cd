@@ -62,7 +62,6 @@ export class AppComponent {
 
   fxFlexOrder1 =
     '<div class="container">' +
-    '\n<div class="container-box">' +
     '\n	\n<div class="content" fxLayout="row wrap">' +
     '\n\n<div fxFlex="20" class="flex-item" fxFlexOrder="4">' +
     '\n<div class="item">1. One</div>' +
@@ -77,7 +76,6 @@ export class AppComponent {
     '\n			<div class="item">4. Four</div>' +
     "\n			</div>" +
     "\n		</div>" +
-    "\n	\n	</div>" +
     "\n	</div>";
 
   fxFlexOffset1 =
