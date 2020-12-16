@@ -9,7 +9,7 @@ export class AppComponent {
   name = "Angular 5";
   flexLayout1 =
     '<div class="container">' +
-    '\n	<div class="content" fxLayout="row">' +
+    '\n	<div class="content" fxLayout="row" fxLayout.lt-md="column">' +
     '\n	\n<div fxFlex="50" fxFlex.lt-md="100" class="flex-item">' +
     '\n	<div class="item">50% division</div>' +
     "\n	</div>" +
